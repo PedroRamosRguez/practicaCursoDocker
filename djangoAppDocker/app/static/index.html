@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <line-chart :data="chartData"></line-chart>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
+    <script src="https://unpkg.com/chart.js@2.7.1/dist/Chart.bundle.js"></script>
+    <script src="https://unpkg.com/chartkick@2.3.3"></script>
+    <script src="https://unpkg.com/vue-chartkick@0.2.1/dist/vue-chartkick.js"></script>
+    <script src="{% static "/js/index.js" %}"></script>
+</body>
+</html>
