@@ -1,0 +1,13 @@
+# typical ignore in DjangoApp
+*.log
+.static_storage/
+.media/
+local_settings.py
+
+# Python compiled byte code
+*.pyc
+
+# SQLite3 database
+*.sqlite3
+
+migrations/
