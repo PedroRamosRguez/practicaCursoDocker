@@ -3,6 +3,21 @@ var app = new Vue({
     el: "#app",
     delimiters: ["[[", "]]"],
     data: {
-        chartData: [["Jan", 4], ["Feb", 2], ["Mar", 10], ["Apr", 5], ["May", 3]]
-    }
+        chartData: [],
+        second:0,    
+    },
+    
+    methods:{
+        randomNumber: function(){
+            values=[new Date(),Math.random()]
+            this.chartData.push(values)
+        },
+        secondUp: function(){
+            this.second +=1
+        }
+    },
+    created:function(){
+        setInterval(this.randomNumber,1000)
+        setInterval(this.secondUp,1000)
+    },
 })

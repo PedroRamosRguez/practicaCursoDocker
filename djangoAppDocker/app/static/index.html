@@ -5,11 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <title>Document</title>
 </head>
 <body>
     <div id="app">
-        <line-chart :data="chartData"></line-chart>
+        <h1 class="text-center">Práctica Final Curso Docker</h1>
+        <h2 class="text-center">Ejemplo de visualizacion de datos usando django,vue y chartjs</h2>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 offset-md-3 img-thumbnail">
+                <img class="img-fluid" src="{% static "/img/imagen.jpg" %}"></img>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-6 offset-md-3 img-thumbnail">
+                <br/>
+                <line-chart :data="chartData" :download="true" download="grafico practica docker"></line-chart>
+            </div>
+        </div>
+            
+        <div class="row">
+                <div class="col-xs-12 col-md-6 offset-md-3 img-thumbnail">
+                    <br/>
+                    <h2>Llevas conectado [[second]] segundos</h2>
+                </div>
+            </div>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.13/vue.js"></script>
     <script src="https://unpkg.com/chart.js@2.7.1/dist/Chart.bundle.js"></script>
